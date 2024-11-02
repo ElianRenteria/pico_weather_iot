@@ -88,7 +88,7 @@ def get_weather():
 def display_on_lcd(time_str, temp):
     lcd.clear()
     lcd.move_to(0, 0)
-    lcd.putstr("Escondido  " + time_str)
+    lcd.putstr(CITY+"  " + time_str)
     lcd.move_to(0, 1)
     lcd.putstr("   Temp: " + convert_temp(temp) if temp else "No data")
 
@@ -124,3 +124,4 @@ while True:
             setup_success = sync_time()
             count += 1
             time.sleep(1)
+
