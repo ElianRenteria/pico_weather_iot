@@ -22,7 +22,7 @@ weather_update_interval = 60 * 60
 time_update_interval = 60
 last_weather_update = -weather_update_interval
 last_time_update = -time_update_interval
-time_offset = 5 * 3600  # 5 hours for timezone adjustment
+time_offset = 4 * 3600  # 4 hours for timezone adjustment
 
 # Connect to Wi-Fi with Robust Retry Mechanism
 wlan = network.WLAN(network.STA_IF)
